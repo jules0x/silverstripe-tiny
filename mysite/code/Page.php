@@ -11,6 +11,10 @@ class Page extends SiteTree {
 		return $fields;
 	}
 
+	public function CurrentYear() {
+		return date('Y');
+	}
+
 }
 
 class Page_Controller extends ContentController {

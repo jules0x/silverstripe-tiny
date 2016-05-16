@@ -1,4 +1,9 @@
-// DragScroll
+/*
+* Dragscroll
+* 
+* To enable drag scrolling, add 'dragscroll' class to <body>
+ */
+
 var dragscrollEnabled = $('.dragscroll').html();
 
 if (dragscrollEnabled) {
@@ -22,11 +27,3 @@ if (dragscrollEnabled) {
         curDown = false;
     });
 }
-
-
-// Parallax
-var touch = Modernizr.touch;
-$('.img-holder').imageScroll({
-    imageAttribute: (touch === true) ? 'image-mobile' : 'image',
-    touch: touch
-});
