@@ -3,7 +3,10 @@
 
     <% include Head %>
 
-    <body>
+    <body
+        class="
+        <%--dragscroll--%>
+        ">
      $Layout
     </body>
 
