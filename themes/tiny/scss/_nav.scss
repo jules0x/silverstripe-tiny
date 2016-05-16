@@ -1,0 +1,49 @@
+.navigation {
+  .container-fluid {
+    padding: 0;
+  }
+  #primary {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+  .nav li {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    .navbar-brand {
+      font-size: 24px;
+    }
+    .nav li {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navigation {
+    .navbar-brand {
+      font-size: 28px;
+    }
+    .nav li {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    .navbar-brand {
+      font-size: 32px;
+    }
+    .nav li {
+      font-size: 20px;
+    }
+  }
+}

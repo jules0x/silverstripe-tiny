@@ -1,10 +1,12 @@
-var curYPos = 0,
-    curXPos = 0,
-    curDown = false;
-
+// DragScroll
 var dragscrollEnabled = $('.dragscroll').html();
 
 if (dragscrollEnabled) {
+
+    var curYPos = 0,
+    curXPos = 0,
+    curDown = false;
+
     window.addEventListener('mousemove', function (e) {
         if (curDown === true) {
             window.scrollTo(document.body.scrollLeft + (curXPos - e.pageX), document.body.scrollTop + (curYPos - e.pageY));
@@ -20,3 +22,11 @@ if (dragscrollEnabled) {
         curDown = false;
     });
 }
+
+
+// Parallax
+var touch = Modernizr.touch;
+$('.img-holder').imageScroll({
+    imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+    touch: touch
+});

@@ -3,7 +3,9 @@
 
     <% include Head %>
 
-    <body class="dragscroll">
+    <% include TopNav %>
+
+    <body class="class-$ClassName dragscroll">
      $Layout
     </body>
 

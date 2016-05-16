@@ -1,8 +1,15 @@
 @import "typography";
+@import "layout";
+@import "nav";
+
 
 .dragscroll * {
   -webkit-user-select: none;
   -moz-user-select: moz-none;
   -ms-user-select: none;
   user-select: none;
+  cursor: context-menu;
+  a, button {
+    cursor: pointer;
+  }
 }
