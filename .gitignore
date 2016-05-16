@@ -1,0 +1,10 @@
+_ss_environment.php
+.idea
+.sass-cache/
+assets/*
+cms/
+framework/
+reports/
+siteconfig/
+themes/thirdparty/
+vendor/
