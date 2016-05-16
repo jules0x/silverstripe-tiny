@@ -1,4 +1,5 @@
 <?php
+
 class Page extends SiteTree {
 
 	private static $db = array();
@@ -14,21 +15,19 @@ class Page extends SiteTree {
 
 class Page_Controller extends ContentController {
 
-	private static $allowed_actions = array ();
+	private static $allowed_actions = array();
 
 	public function init() {
 		parent::init();
-
 		$themePath = 'themes/' . Config::inst()->get('SSViewer', 'theme');
 
 		// Bootstrap
 		Requirements::css('themes/thirdparty/bootstrap/dist/css/bootstrap.css');
 		Requirements::javascript('themes/thirdparty/bootstrap/dist/js/bootstrap.min.js');
-
+		// Jquery
 		Requirements::javascript('themes/thirdparty/jquery/dist/jquery.min.js');
-		
+		// Theme
 		Requirements::javascript($themePath . '/js/script.js');
 		Requirements::css($themePath . '/css/screen.css');
-		
 	}
 }
