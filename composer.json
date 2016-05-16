@@ -1,0 +1,15 @@
+{
+	"name": "jules0x/tiny",
+	"description": "Tiny SilverStripe Installer",
+	"require": {
+		"php": ">=5.3.3",
+		"silverstripe/cms": "3.3.2",
+		"silverstripe/framework": "3.3.2",
+		"silverstripe/siteconfig": "3.3.2"
+	},
+	"config": {
+		"process-timeout": 600
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev"
+}
