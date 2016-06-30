@@ -1,15 +1,22 @@
 {
 	"name": "jules0x/silverstripe-tiny",
-	"description": "Tiny SilverStripe Installer",
+	"description": "TinySilverStripe",
 	"require": {
 		"php": ">=5.5.12",
 		"silverstripe/cms": "3.4.0",
 		"silverstripe/framework": "3.4.0",
-		"silverstripe/siteconfig": "3.4.0"
+		"silverstripe/siteconfig": "3.4.0",
+		"silverstripe-themes/tiny": "dev-master"
 	},
 	"config": {
 		"process-timeout": 600
 	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/jules0x/silverstripe-tiny-theme"
+		}
+	],
 	"prefer-stable": true,
 	"minimum-stability": "dev"
 }
