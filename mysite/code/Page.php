@@ -26,10 +26,12 @@ class Page_Controller extends ContentController {
 		$themePath = 'themes/' . Config::inst()->get('SSViewer', 'theme');
 
 		// Jquery
-		Requirements::javascript('themes/thirdparty/jquery/dist/jquery.min.js');
+		Requirements::javascript($themePath . '/thirdparty/jquery/dist/jquery.min.js');
+		
 		// Bootstrap
-		Requirements::css('themes/thirdparty/bootstrap/dist/css/bootstrap.min.css');
-		Requirements::javascript('themes/thirdparty/bootstrap/dist/js/bootstrap.min.js');
+		Requirements::css($themePath . '/thirdparty/bootstrap/dist/css/bootstrap.min.css');
+		Requirements::javascript($themePath . '/thirdparty/bootstrap/dist/js/bootstrap.min.js');
+		
 		// Theme
 		Requirements::javascript($themePath . '/js/script.js');
 		Requirements::css($themePath . '/css/screen.css');
