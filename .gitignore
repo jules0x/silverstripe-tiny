@@ -6,5 +6,6 @@ cms/
 framework/
 reports/
 siteconfig/
-themes/*/thirdparty/
+themes/
+tiny-functions/
 vendor/
