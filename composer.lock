@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "304855f5cfaf36b35f69bb4b290b42fd",
-    "content-hash": "9305efd64f3fae23cc5b7c35f00abb5d",
+    "hash": "c3493486a45eefc1bec615ec783677e9",
+    "content-hash": "3ace7378510fab73285c56c92d782209",
     "packages": [
         {
             "name": "composer/installers",
@@ -106,6 +106,46 @@
                 "zikula"
             ],
             "time": "2016-04-13 19:46:30"
+        },
+        {
+            "name": "silverstripe-themes/tiny",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jules0x/silverstripe-tinytheme.git",
+                "reference": "f03761585f8bd61cb9ed02c40db71ebea8e815f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jules0x/silverstripe-tinytheme/zipball/f03761585f8bd61cb9ed02c40db71ebea8e815f0",
+                "reference": "f03761585f8bd61cb9ed02c40db71ebea8e815f0",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/framework": ">=3.4.0"
+            },
+            "type": "silverstripe-theme",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "jules0x",
+                    "github": "https://github.com/jules0x/silverstripe-tiny-theme"
+                }
+            ],
+            "description": "The default TinySilverStripe theme.",
+            "keywords": [
+                "silverstripe",
+                "theme",
+                "tiny"
+            ],
+            "support": {
+                "source": "https://github.com/jules0x/silverstripe-tinytheme/tree/master",
+                "issues": "https://github.com/jules0x/silverstripe-tinytheme/issues"
+            },
+            "time": "2016-07-01 01:47:16"
         },
         {
             "name": "silverstripe/cms",
@@ -311,11 +351,13 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "silverstripe-themes/tiny": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.5.12"
     },
     "platform-dev": []
 }
