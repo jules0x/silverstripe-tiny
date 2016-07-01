@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "21cb9060e28799ed7cc6ad9a1a2def10",
-    "content-hash": "52c77d3ab01cad9e7df91579ba8f6377",
+    "hash": "c3493486a45eefc1bec615ec783677e9",
+    "content-hash": "3ace7378510fab73285c56c92d782209",
     "packages": [
         {
             "name": "composer/installers",
@@ -112,13 +112,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jules0x/silverstripe-tiny-theme.git",
-                "reference": "84852106d53201f309487d4337ae62d409ef46c0"
+                "url": "https://github.com/jules0x/silverstripe-tinytheme.git",
+                "reference": "f03761585f8bd61cb9ed02c40db71ebea8e815f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jules0x/silverstripe-tiny-theme/zipball/84852106d53201f309487d4337ae62d409ef46c0",
-                "reference": "84852106d53201f309487d4337ae62d409ef46c0",
+                "url": "https://api.github.com/repos/jules0x/silverstripe-tinytheme/zipball/f03761585f8bd61cb9ed02c40db71ebea8e815f0",
+                "reference": "f03761585f8bd61cb9ed02c40db71ebea8e815f0",
                 "shasum": ""
             },
             "require": {
@@ -135,16 +135,17 @@
                     "github": "https://github.com/jules0x/silverstripe-tiny-theme"
                 }
             ],
-            "description": "The default Tiny theme.",
+            "description": "The default TinySilverStripe theme.",
             "keywords": [
                 "silverstripe",
-                "theme"
+                "theme",
+                "tiny"
             ],
             "support": {
-                "source": "https://github.com/jules0x/silverstripe-tiny-theme/tree/master",
-                "issues": "https://github.com/jules0x/silverstripe-tiny-theme/issues"
+                "source": "https://github.com/jules0x/silverstripe-tinytheme/tree/master",
+                "issues": "https://github.com/jules0x/silverstripe-tinytheme/issues"
             },
-            "time": "2016-06-30 04:22:02"
+            "time": "2016-07-01 01:47:16"
         },
         {
             "name": "silverstripe/cms",
