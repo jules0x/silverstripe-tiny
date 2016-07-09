@@ -1,5 +1,5 @@
 # Tiny
-#####_A better starting point_
+#####_A minimal starting point_
 
 Tiny is a cutdown installer for Silverstripe, with a Bootstrapped basic theme.
 
