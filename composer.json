@@ -3,9 +3,9 @@
 	"description": "TinySilverStripe",
 	"require": {
 		"php": ">=5.5.12",
-		"silverstripe/cms": "3.4.0",
-		"silverstripe/framework": "3.4.0",
-		"silverstripe/siteconfig": "3.4.0",
+		"silverstripe/cms": "3.4.1",
+		"silverstripe/framework": "3.4.1",
+		"silverstripe/siteconfig": "3.4.1",
 		"silverstripe-themes/tiny": "dev-master"
 	},
 	"config": {
