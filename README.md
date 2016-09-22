@@ -9,7 +9,7 @@ Tiny is a small standard SilverStripe setup.
 
 Tiny uses...
 
-    Silverstripe 3.4.0
+    Silverstripe 3.4.1
 
 To install functional dependencies, run `compass install` in the root directory.
 
