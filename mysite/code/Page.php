@@ -10,6 +10,10 @@ class Page extends SiteTree {
 		$fields = parent::getCMSFields();
 		return $fields;
 	}
+
+	public function CurrentYear() {
+		return date('Y');
+	}
 }
 
 class Page_Controller extends ContentController {
@@ -20,15 +24,7 @@ class Page_Controller extends ContentController {
 		parent::init();
 		$themePath = 'themes/' . Config::inst()->get('SSViewer', 'theme');
 
-		// Jquery
-		Requirements::javascript($themePath . '/thirdparty/jquery/dist/jquery.min.js');
-		
-		// Bootstrap
-		Requirements::css($themePath . '/thirdparty/bootstrap/dist/css/bootstrap.min.css');
-		Requirements::javascript($themePath . '/thirdparty/bootstrap/dist/js/bootstrap.min.js');
-		
-		// Theme
 		Requirements::javascript($themePath . '/js/script.js');
-		Requirements::css($themePath . '/css/screen.css');
+		Requirements::css($themePath . '/css/style.css');
 	}
 }
