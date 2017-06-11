@@ -2,12 +2,27 @@
 
 class Page extends SiteTree {
 
-	private static $db = array();
+	private static $db = array(
+		'Intro' => 'Text',
+		'SocialDescription' => 'Varchar(200)'
+	);
 
-	private static $has_one = array();
+	private static $has_one = array(
+		'SocialImage' => 'Image'
+	);
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
+
+		$fields->addFieldsToTab('Root.Main', array(
+			TextareaField::create('Intro')
+		), 'Content');
+
+		$fields->addFieldsToTab('Root.Social', array(
+			TextareaField::create('SocialDescription'),
+			UploadField::create('SocialImage')
+		));
+
 		return $fields;
 	}
 
@@ -22,6 +37,7 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
+
 		$themePath = 'themes/' . Config::inst()->get('SSViewer', 'theme');
 
 		Requirements::javascript($themePath . '/js/script.js');
