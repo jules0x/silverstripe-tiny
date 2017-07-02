@@ -6,5 +6,5 @@ cms/
 framework/
 reports/
 siteconfig/
-themes/tiny/
+themes/tiny/node_modules/
 vendor/

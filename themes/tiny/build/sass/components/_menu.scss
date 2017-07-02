@@ -1,0 +1,61 @@
+$menu-link-color: #a6a1ff;
+$menu-link-color--main: #ff5e48;
+$menu-link--current-section: #ffbe3c;
+
+.menu {
+
+	background: $menu-background-color;
+	transition: all 0.3s ease;
+	z-index: 1;
+
+	@include respond(md) {
+		background: initial;
+	}
+
+	&-item {
+		.menu--main & {
+			@include respond(md) {
+				display: inline-block;
+
+				&:first-of-type {
+					margin-left: -15px;
+				}
+			}
+		}
+	}
+
+	&-link {
+		@include respond(md) {
+			padding: 8px 16px;
+		}
+	}
+
+	&-list {
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		&--nested {
+			padding-left: 16px;
+		}
+	}
+
+	&-toggle {
+		float: right;
+	}
+}
+
+a.menu-link,
+a.menu-link:focus,
+a.menu-link:hover,
+a.menu-link:visited {
+	color: $menu-link-color;
+
+	&.section,
+	&.current {
+		color: $menu-link--current-section;
+
+		.menu--main & {
+			color: $menu-link-color--main;
+		}
+	}
+}

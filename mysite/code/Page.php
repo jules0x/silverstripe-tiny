@@ -40,7 +40,7 @@ class Page_Controller extends ContentController {
 
 		$themePath = 'themes/' . Config::inst()->get('SSViewer', 'theme');
 
-		Requirements::javascript($themePath . '/js/script.js');
+		Requirements::javascript($themePath . '/js/script.min.js');
 		Requirements::css($themePath . '/css/style.css');
 	}
 }

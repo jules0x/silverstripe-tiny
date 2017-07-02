@@ -1,0 +1,23 @@
+.menu {
+
+	&--Drop {
+		padding-left: 15px;
+		width: calc(100% + 30px);
+		height: 0;
+		margin-left: -15px;
+		overflow: hidden;
+
+		@include respond(sm) {
+			padding-left: 20px;
+			margin-left: -20px;
+			width: calc(100% + 40px);
+		}
+
+		@include respond(md){
+			padding: 0;
+			height: auto;
+			margin-left: 0;
+			width: auto;
+		}
+	}
+}
