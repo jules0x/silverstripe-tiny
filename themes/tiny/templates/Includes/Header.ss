@@ -12,10 +12,10 @@
             </span>
         </button>
 
-        <nav class="menu menu--main menu--{$SiteConfig.MobileMenuStyle}" data-menu>
+        <nav class="menu menu--Main menu--{$SiteConfig.MobileMenuStyle}" data-menu>
             <ul class="menu-list pure-menu-list" data-menu-list>
                 <% loop $Menu(1) %>
-                    <li class="menu-item pure-menu-item $LinkingMode">
+                    <li class="menu-item pure-menu-item">
                         <a href="$AbsoluteLink" class="menu-link $LinkingMode">$MenuTitle</a>
                     </li>
                 <% end_loop %>

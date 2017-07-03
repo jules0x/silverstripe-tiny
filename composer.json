@@ -6,7 +6,8 @@
 		"silverstripe/cms": "3.6.0",
 		"silverstripe/framework": "3.6.0",
 		"silverstripe/siteconfig": "3.6.0",
-		"silverstripe-themes/tiny": "dev-master"
+		"silverstripe-themes/tiny": "dev-master",
+		"silverstripe/selectupload": "*"
 	},
 	"config": {
 		"process-timeout": 600

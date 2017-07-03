@@ -1,13 +1,15 @@
+// Slide menu
 .menu {
 
-	&--Slide {
-		position: absolute;
-		top: 80px;
-
+	// Positioning
+	&.menu--Slide {
 		left: calc(-100% - 45px);
 		width: calc(100% + 30px);
 
 		padding-left: 15px;
+		position: absolute;
+		top: 80px;
+		z-index: 1;
 
 		@include respond(sm) {
 			left: calc(-100% - 60px);
@@ -18,10 +20,9 @@
 		}
 
 		@include respond(md) {
-			position: initial;
 			left: initial;
-
 			padding: 0;
+			position: initial;
 			width: auto;
 		}
 
@@ -31,6 +32,17 @@
 			@include respond(sm) {
 				left: -20px;
 			}
+		}
+	}
+
+
+	// Styling
+	&.menu--Slide {
+		background: $menu-background-color;
+		transition: left 0.3s ease;
+
+		@include respond(md) {
+			background: initial;
 		}
 	}
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2759a4159256f7e3508a31fac7aff3bd",
+    "content-hash": "ff9728129a21ce3f1e2b7f1873782b58",
     "packages": [
         {
             "name": "composer/installers",
@@ -317,6 +317,51 @@
                 "silverstripe"
             ],
             "time": "2017-05-29T00:30:58+00:00"
+        },
+        {
+            "name": "silverstripe/selectupload",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-selectupload.git",
+                "reference": "b39216087dd58f6d900d02f0eef915a4c5385524"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-selectupload/zipball/b39216087dd58f6d900d02f0eef915a4c5385524",
+                "reference": "b39216087dd58f6d900d02f0eef915a4c5385524",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7@stable"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian@silverstripe.com"
+                }
+            ],
+            "description": "Enables files to be uploaded into a user-designated folder",
+            "keywords": [
+                "cwp",
+                "file",
+                "silverstripe",
+                "upload"
+            ],
+            "time": "2016-08-09T05:57:42+00:00"
         },
         {
             "name": "silverstripe/siteconfig",

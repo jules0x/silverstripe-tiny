@@ -166,7 +166,7 @@ gulp.task('cms-css', function() {
  * and save as a script.min file
  */
 gulp.task('make-js-components', function() {
-    return gulp.src('build/**/components/**/*.js')
+    return gulp.src('build/js/components/**/*.js')
         .pipe(eslint({
             globals: [
                 'jQuery',
@@ -245,8 +245,8 @@ gulp.task('make-js', ['make-js-components', 'make-js-npm'], function() {
 gulp.task('build', ['json', 'pure', 'make-css', 'cms-css', 'make-js', 'svgo']);
 
 gulp.task('watch', ['build', 'browserSync'], function () {
-    gulp.watch('build/**/*.scss', ['json', 'make-css', 'cms-css']); //watch sass in project sass folder, run tasks
-    gulp.watch('build/**/*.js', ['json', 'make-js']);  //watch js in project js folder, run tasks
+    gulp.watch('build/sass/*.scss', ['json', 'make-css', 'cms-css']); //watch sass in project sass folder, run tasks
+    gulp.watch('build/js/*.js', ['json', 'make-js']);  //watch js in project js folder, run tasks
 });
 
 gulp.task('default', ['watch']);

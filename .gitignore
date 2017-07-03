@@ -1,10 +1,10 @@
 _ss_environment.php
 .idea
-.sass-cache/
 assets/*
 cms/
 framework/
 reports/
+selectupload/
 siteconfig/
 themes/tiny/node_modules/
 vendor/

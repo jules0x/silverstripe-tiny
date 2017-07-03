@@ -2,7 +2,7 @@
     <div class="container pure-g">
 
         <% if $Menu(2) %>
-            <% include SideBar %>
+            <% include MenuSide %>
         <% end_if %>
 
             <div class="content pure-u-1 <% if $Menu(2) %>pure-u-md-16-24 pure-push-md-2-24<% end_if %>">

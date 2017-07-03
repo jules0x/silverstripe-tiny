@@ -9,3 +9,9 @@ After:
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
   theme: 'tiny'
+---
+Name: mysettings
+---
+Injector:
+  UploadField: SelectUploadField
+---
