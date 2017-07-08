@@ -1,15 +1,15 @@
 {
-  "name": "tiny",
+  "name": "dna-recipe",
   "version": "1.0.0",
-  "description": "Tiny boilerplate",
+  "description": "DNA's basic Sass boilerplate",
   "main": "gulpfile.js",
-  "repository": "https://github.com/jules0x/silverstripe-tiny.git",
+  "repository": "https://github.com/dnadesign/dna-recipe.git",
   "dependencies": {
-    "purecss": "1.0.0"
+    "purecss": "^1.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
-    "browser-sync": "^2.18.12",
+    "autoprefixer": "^7.1.0",
+    "browser-sync": "^2.18.11",
     "del": "^2.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
@@ -31,8 +31,12 @@
     "gulp-uglify": "^2.1.2",
     "jquery": "^3.2.1",
     "postcss-hover": "^0.3.0",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "postcss-inline-svg": "^3.0.0"
   },
-  "author": "jules0x/DNA-design",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
   "license": "ISC"
 }

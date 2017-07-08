@@ -15964,6 +15964,7 @@ DO.Subscribe('app:ready', function(e, $) {
 
 	function toggleMenu() {
         menu.toggleClass('menu--open');
+        menu.toggleClass('menu--open');
 	}
 
 	init();

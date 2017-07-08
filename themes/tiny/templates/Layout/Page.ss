@@ -1,4 +1,9 @@
 <div class="layout">
+
+    <%--<% if $ShowCarousel %>--%>
+        <%--<% include Carousel %>--%>
+    <%--<% end_if %>--%>
+
     <div class="container pure-g">
 
         <% if $Menu(2) %>

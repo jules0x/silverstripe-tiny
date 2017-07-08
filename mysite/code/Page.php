@@ -4,11 +4,13 @@ class Page extends SiteTree {
 
 	private static $db = array(
 		'Intro' => 'Text',
-		'SocialDescription' => 'Varchar(200)'
+		'SocialDescription' => 'Varchar(200)',
+		'ShowCarousel' => 'Boolean'
 	);
 
 	private static $has_one = array(
-		'SocialImage' => 'Image'
+		'SocialImage' => 'ImageTwo',
+		'Carousel' => 'Carousel'
 	);
 
 	public function getCMSFields() {
@@ -18,15 +20,23 @@ class Page extends SiteTree {
 			TextareaField::create('Intro')
 		), 'Content');
 
+		$fields->addFieldsToTab('Root.Carousel', array(
+			CheckboxField::create('ShowCarousel'),
+			$carouselDropdown = DropdownField::create('CarouselID', 'Carousel', Dataobject::get("Carousel")->map("ID", "Title", "Please Select"))
+		));
+
 		$fields->addFieldsToTab('Root.Social', array(
 			TextareaField::create('SocialDescription'),
 			UploadField::create('SocialImage')
 		));
 
+		// Configure fields
+		$carouselDropdown->setHasEmptyDefault(true);
+
 		return $fields;
 	}
 
-	public function CurrentYear() {
+	public function getCurrentYear() {
 		return date('Y');
 	}
 }

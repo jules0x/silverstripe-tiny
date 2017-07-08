@@ -1,6 +1,7 @@
 _ss_environment.php
 .idea
 assets/*
+betterbuttons/
 cms/
 framework/
 reports/
