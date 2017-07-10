@@ -2,7 +2,7 @@
 
 A small SilverStripe install.
 
-    Silverstripe 3.6.0
+    Silverstripe 3.6.1
 
 Run `composer install` in the root directory.
 
