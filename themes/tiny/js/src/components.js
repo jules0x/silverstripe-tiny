@@ -16,7 +16,7 @@ DO.Subscribe('app:ready', function(e, $) {
     }
 
     function toggleMobileMenu() {
-        if (menu.hasClass('menu--Drop')) {
+        if (menu.hasClass('menu--drop')) {
             if (menu.hasClass('menu--open')) {
                 menu.height(menuList.outerHeight());
             } else {

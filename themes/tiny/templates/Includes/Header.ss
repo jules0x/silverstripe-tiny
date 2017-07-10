@@ -12,7 +12,8 @@
             </span>
         </button>
 
-        <nav class="menu menu--Main menu--{$SiteConfig.MobileMenuStyle}" data-menu>
+        <nav class="menu menu--main menu--{$SiteConfig.MobileMenuStyle}
+            <% if $SiteConfig.MobileMenuStyle == 'drop' && $SiteConfig.DropMenuBehaviour == 'floating' %>menu--drop--floating<% end_if %>" data-menu>
             <ul class="menu-list pure-menu-list" data-menu-list>
                 <% loop $Menu(1) %>
                     <li class="menu-item pure-menu-item">
