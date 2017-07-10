@@ -3,6 +3,7 @@ _ss_environment.php
 assets/*
 betterbuttons/
 cms/
+display_logic/
 framework/
 reports/
 selectupload/

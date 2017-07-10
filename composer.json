@@ -7,7 +7,8 @@
 		"silverstripe/framework": "3.6.1",
 		"silverstripe/siteconfig": "3.6.1",
 		"silverstripe/selectupload": "*",
-		"unclecheese/betterbuttons": "1.2.*"
+		"unclecheese/betterbuttons": "1.2.*",
+		"silverstripe/display-logic": "^1.5"
 	},
 	"config": {
 		"process-timeout": 600
