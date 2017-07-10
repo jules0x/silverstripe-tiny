@@ -1,11 +1,15 @@
+// Drop menu
 .menu {
 
+	// Positioning
 	&--Drop {
+		height: 0;
+		margin-bottom: -16px;
+		margin-left: -15px;
+		margin-top: 16px;
+		overflow: hidden;
 		padding-left: 15px;
 		width: calc(100% + 30px);
-		height: 0;
-		margin-left: -15px;
-		overflow: hidden;
 
 		@include respond(sm) {
 			padding-left: 20px;
@@ -18,6 +22,16 @@
 			height: auto;
 			margin-left: 0;
 			width: auto;
+		}
+	}
+
+	// Styling
+	&--Drop {
+		background: $menu-background-color;
+		transition: height 0.3s ease;
+
+		@include respond(md) {
+			background: initial;
 		}
 	}
 }

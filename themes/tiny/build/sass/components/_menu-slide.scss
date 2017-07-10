@@ -2,7 +2,7 @@
 .menu {
 
 	// Positioning
-	&.menu--Slide {
+	&--Slide {
 		left: calc(-100% - 45px);
 		width: calc(100% + 30px);
 
@@ -37,7 +37,7 @@
 
 
 	// Styling
-	&.menu--Slide {
+	&--Slide {
 		background: $menu-background-color;
 		transition: left 0.3s ease;
 
