@@ -18,9 +18,9 @@ DO.Subscribe('app:ready', function(e, $) {
     function toggleMobileMenu() {
         if (menu.hasClass('menu--drop')) {
             if (menu.hasClass('menu--open')) {
-                menu.height(menuList.outerHeight());
-            } else {
                 menu.removeAttr('style');
+            } else {
+                menu.height(menuList.outerHeight());
             }
         }
     }
@@ -46,6 +46,7 @@ DO.Subscribe('app:ready', function(e, $) {
 
 	function toggleMenu() {
         menu.toggleClass('menu--open');
+        menuToggle.toggleClass('hamburger-active');
 	}
 
 	init();
