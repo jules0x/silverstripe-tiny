@@ -1,3 +1,24 @@
 SiteConfig:
   extensions:
     - SiteConfigExtension
+Order:
+  modifiers:
+    - ShippingFrameworkModifier
+    - FlatTaxModifier
+    - OrderDiscountModifier
+CheckoutPage:
+  steps:
+    'membership': 'CheckoutStep_Membership'
+    'contactdetails': 'CheckoutStep_ContactDetails'
+    'shippingaddress': 'CheckoutStep_Address'
+    'billingaddress': 'CheckoutStep_Address'
+    'shippingmethod': 'CheckoutStep_ShippingMethod'
+    'discount': 'CheckoutStep_Discount'
+    'paymentmethod': 'CheckoutStep_PaymentMethod'
+    'summary': 'CheckoutStep_Summary'
+Product:
+  extensions:
+    - SpecificPricingExtension
+ProductVariation:
+  extensions:
+    - SpecificPricingExtension

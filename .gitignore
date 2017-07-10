@@ -1,12 +1,32 @@
+# Environment/IDE/Third party
 _ss_environment.php
 .idea
+vendor/
+themes/tiny/node_modules/
+
+# Base installation
 assets/*
-betterbuttons/
 cms/
-display_logic/
 framework/
 reports/
-selectupload/
 siteconfig/
-themes/tiny/node_modules/
-vendor/
+
+# Modules
+betterbuttons/
+display_logic/
+selectupload/
+
+# Shop modules
+email-helpers/
+gridfieldextensions/
+googlemapfield/
+hasonefield/
+listsorter/
+omnipay/
+omnipay-ui/
+silvershop/
+silvershop-discounts/
+silvershop-geocoding/
+silvershop-shipping/
+sqlquerylist/
+versioned-gridfield/
