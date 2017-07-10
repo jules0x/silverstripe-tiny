@@ -1,12 +1,12 @@
 .container {
-	margin: 0 15px;
+	margin: 0 16px;
 
 	@include respond(sm) {
-		margin: 0 20px;
+		margin: 0 24px;
 	}
 
 	@include respond(md) {
-		margin: 0 30px;
+		margin: 0 32px;
 	}
 
 	@include respond(lg) {

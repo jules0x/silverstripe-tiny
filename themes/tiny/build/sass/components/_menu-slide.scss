@@ -3,19 +3,19 @@
 
 	// Positioning
 	&--Slide {
-		left: calc(-100% - 45px);
-		width: calc(100% + 30px);
+		left: calc(-100% - 48px);
+		width: calc(100% + 32px);
 
-		padding-left: 15px;
+		padding-left: 16px;
 		position: absolute;
 		top: 80px;
 		z-index: 1;
 
 		@include respond(sm) {
-			left: calc(-100% - 60px);
-			width: calc(100% + 40px);
+			left: calc(-100% - 72px);
+			width: calc(100% + 48px);
 
-			padding-left: 20px;
+			padding-left: 24px;
 			top: 82px;
 		}
 
@@ -27,14 +27,13 @@
 		}
 
 		&.menu--open {
-			left: -15px;
+			left: -16px;
 
 			@include respond(sm) {
-				left: -20px;
+				left: -24px;
 			}
 		}
 	}
-
 
 	// Styling
 	&--Slide {
