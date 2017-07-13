@@ -16,8 +16,8 @@ $side-menu-link--current-section: #272727;
 
 			&.section,
 			&.current {
-				font-size: 22px;
 				font-weight: 600;
+				text-transform: uppercase;
 			}
 		}
 	}
@@ -50,7 +50,7 @@ $side-menu-link--current-section: #272727;
 				display: inline-block;
 
 				&:first-of-type {
-					margin-left: -15px;
+					margin-left: -16px;
 				}
 			}
 
@@ -58,6 +58,11 @@ $side-menu-link--current-section: #272727;
 	}
 
 	&.menu--side {
+
+		@include respond(md) {
+			margin-left: -16px;
+		}
+
 		a {
 			&.menu-link {
 				color: $side-menu-link;
@@ -82,6 +87,8 @@ $side-menu-link--current-section: #272727;
 	}
 
 	&-link {
+		line-height: 1em;
+
 		@include respond(md) {
 			padding: 8px 16px;
 		}
