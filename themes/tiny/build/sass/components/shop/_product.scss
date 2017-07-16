@@ -1,0 +1,22 @@
+.product {
+
+	&-details {
+		.Image {}
+		.InternalItemID {}
+		.Model {}
+		.Size {}
+		.NumItemsInCart {}
+	}
+
+	&-image {}
+	&-list {}
+	&-title {}
+	&-menu {}
+	&-content {}
+	&menulist {
+		&-link {}
+	}
+	&-model {}
+	&-viewlink {}
+	&-add {}
+}

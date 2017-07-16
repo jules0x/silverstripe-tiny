@@ -1,9 +1,9 @@
 <% if Sorter %>
     <p class="sorter">
-        <span calss="sorter_label">Sort:</span>
+        <span class="sorter-label">Sort:</span>
         <% loop Sorter.Sorts %>
-            <span class="sorter_option sorter_option_$ID<% if IsCurrent %> sorter_current<% end_if %>">
-				<a href="$Link" title="sort by $Title">$Title</a>
+            <span class="sorter-option sorter-option--$ID<% if IsCurrent %> sorter-option--current<% end_if %>">
+				<a href="$Link" title="sort by $Title" class="sorter-link">$Title</a>
 			</span>
             <% if not Last %>|<% end_if %>
         <% end_loop %>

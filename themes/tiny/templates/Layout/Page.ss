@@ -5,15 +5,15 @@
             <% include MenuSide %>
         <% end_if %>
 
-            <div class="content pure-u-1 <% if $Menu(2) %>pure-u-md-16-24 pure-push-md-2-24<% end_if %>">
+        <div class="content pure-u-1 <% if $Menu(2) %>pure-u-md-19-24 pure-push-md-1-24<% end_if %>">
 
-                <h1 class="page-title">$MenuTitle</h1>
+            <h1 class="content-title">$MenuTitle</h1>
 
-                <p class="page-intro">$Intro</p>
+            <p class="content-intro">$Intro</p>
 
-                <div class="page-content">
-                    $Content
-                </div>
+            <div class="content-html">
+                $Content
+            </div>
 
             <% if $Form %>
                 <div class="form">

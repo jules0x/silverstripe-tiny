@@ -1,24 +1,32 @@
-<% require themedCSS(productcategory,shop) %>
-<div id="ProductGroup" class="typography">
-    <h1 class="pageTitle">$Title</h1>
-    <% if $Content %>
-        <div>
-            $Content
-        </div>
-    <% end_if %>
+<div class="layout">
+    <div class="container pure-g">
 
-    <% if $Products %>
-        <div id="Products" class="category">
-            <% include Sorter %>
-            <div class="clear"><!-- --></div>
-            <ul class="productList">
-                <% loop $Products %>
-                    <% include ProductGroupItem %>
-                <% end_loop %>
-            </ul>
-            <div class="clear"><!-- --></div>
-            <% include ProductGroupPagination %>
+        <div class="content pure-u-1">
+            <h1 class="content-title">$Title</h1>
+            <% if $Content %>
+                <div class="content-html">
+                    $Content
+                </div>
+            <% end_if %>
         </div>
-    <% end_if %>
+
+        <% if $Products %>
+            <div class="category pure-u-1">
+                <% include Sorter %>
+
+                <ul class="product-list">
+                    <% loop $Products %>
+                        <% include ProductGroupItem %>
+                    <% end_loop %>
+                </ul>
+
+                <% include ProductGroupPagination %>
+            </div>
+        <% end_if %>
+
+        <div class="pure-u-1 pure-u-md-8-24">
+            <% include SideBar %>
+        </div>
+
+    </div>
 </div>
-<% include SideBar %>
