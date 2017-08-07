@@ -1,11 +1,22 @@
 .cart {
 
+	&-title {
+		margin: 0;
+	}
 	&--side {}
 
-	&-itemcount {}
+	&-itemcount {
+		margin: 0;
+	}
+
 	&-empty {}
 
 	&-item {
+		box-shadow: 1px 1px 1px 1px #666;
+		margin-top: 4px;
+		margin-bottom: 8px;
+		padding: 4px;
+
 		&-checkoutlink  {}
 		&-image {}
 		&-title {}
@@ -14,6 +25,24 @@
 		&-times {}
 		&-unitprice {}
 		&-subtitle {}
-		&-removelink {}
+
+		&-removelink {
+			padding-right: 24px;
+			position: absolute;
+			right: 5px;
+		}
+	}
+
+	.Total {
+		font-weight: 800;
+	}
+
+	tfoot {
+		border-top: 1px solid $cart-subtotal-border;
+
+		td {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 	}
 }

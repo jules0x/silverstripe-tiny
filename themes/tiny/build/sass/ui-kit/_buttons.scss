@@ -100,3 +100,14 @@ h1, h2, h3 {
 		vertical-align: middle;
 	}
 }
+
+.tiny-button,
+#action_checkoutSubmit,
+#action_setshippingaddress,
+#Form_ShippingMethodForm_action_setShippingMethod,
+#action_setcoupon {
+	background: #fff;
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 8px 16px;
+}

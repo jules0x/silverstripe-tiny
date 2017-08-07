@@ -1,4 +1,4 @@
-<li class="product">
+<li class="product pure-u-xs-12-24  pure-u-sm-8-24 pure-u-md-6-24">
     <% if $Image %>
         <a href="$Link" title="<%t Shop.ReadMoreTitle "Click here to read more on &quot;{Title}&quot;" Title=$Title %>">
             <img src="$Image.Thumbnail.URL" alt="<%t Product.ImageAltText "{Title} image" Title=$Title %>" />
@@ -27,7 +27,7 @@
         <% else %>
             <% if $canPurchase %>
                 <div class="product-add">
-                    <a href="$addLink" title="<%t Product.AddToCartTitle "Add &quot;{Title}&quot; to your cart" Title=$Title %>">
+                    <a class="tiny-button" href="$addLink" title="<%t Product.AddToCartTitle "Add &quot;{Title}&quot; to your cart" Title=$Title %>">
                         <%t Product.AddToCart "Add to Cart" %>
                         <% if $IsInCart %>
                             ($Item.Quantity)

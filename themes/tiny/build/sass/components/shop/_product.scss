@@ -2,21 +2,37 @@
 
 	&-details {
 		.Image {}
+
 		.InternalItemID {}
+
 		.Model {}
+
 		.Size {}
+
 		.NumItemsInCart {}
 	}
 
 	&-image {}
-	&-list {}
+
+	&-list {
+		margin: 0;
+		padding: 0;
+	}
+
 	&-title {}
+
 	&-menu {}
+
 	&-content {}
+
 	&menulist {
 		&-link {}
 	}
+
 	&-model {}
+
 	&-viewlink {}
-	&-add {}
+
+	&-add {
+	}
 }

@@ -1,5 +1,8 @@
 .price {
 
+	&-original {
+		text-decoration: line-through;
+	}
 	&-value {}
 	&-currency {}
 }

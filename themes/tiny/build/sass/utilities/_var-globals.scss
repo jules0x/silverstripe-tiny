@@ -68,7 +68,7 @@ colour variables above
 
 $brand-text-color: #FFF;
 $default-color: $color-gallery;
-$primary-color: $color-red-ribbon;
+$primary-color: #0d8c78;
 $secondary-color: $color-pickled-bluewood;
 $success-color: $color-sushi;
 $error-color: $color-carnation;
@@ -134,3 +134,6 @@ $table-cell-border-style:  solid;
 $container-width: 1200px;
 $max-device-width:  2880px;
 $gutter: 30px;
+
+$sorter-border: black;
+$cart-subtotal-border: black;

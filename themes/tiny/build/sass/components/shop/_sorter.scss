@@ -1,13 +1,11 @@
 .sorter {
-	&-label {
-
-	}
-
-	&-option {
-
-	}
+	text-align: right;
 
 	&-link {
+		padding-bottom: 4px;
 
+		.sorter--current & {
+			font-weight: 800;
+		}
 	}
 }

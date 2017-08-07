@@ -3,4 +3,14 @@
 		float: none;
 		padding-left: 0;
 	}
+
+	&_action_dologin {
+		background: white;
+		border: 1px solid #cccccc;
+		padding: 8px 16px;
+	}
+
+	&_Remember {
+		margin-right: 8px;
+	}
 }

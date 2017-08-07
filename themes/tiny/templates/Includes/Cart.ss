@@ -1,4 +1,3 @@
-<% require themedCSS(cart,shop) %>
 <% if $Items %>
     <table class="cart" summary="<%t ShoppingCart.TableSummary "Current contents of your cart." %>">
         <colgroup>
@@ -34,13 +33,11 @@
                         <% end_if %>
                     </td>
                     <td id="$TableTitleID">
-                        <h3>
                         <% if $Link %>
                             <a href="$Link" title="<%t Shop.ReadMoreTitle "Click here to read more on &quot;{Title}&quot;" Title=$TableTitle %>">$TableTitle</a>
                         <% else %>
                             $TableTitle
                         <% end_if %>
-                        </h3>
                         <% if $SubTitle %><p class="subtitle">$SubTitle</p><% end_if %>
                         <% if $Product.Variations && $Up.Editable %>
                             <%t Shop.Change "Change" %>: $VariationField

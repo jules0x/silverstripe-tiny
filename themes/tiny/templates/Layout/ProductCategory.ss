@@ -11,10 +11,10 @@
         </div>
 
         <% if $Products %>
-            <div class="category pure-u-1">
+            <div class="category pure-u-1 pure-u-md-16-24">
                 <% include Sorter %>
 
-                <ul class="product-list">
+                <ul class="product-list pure-g">
                     <% loop $Products %>
                         <% include ProductGroupItem %>
                     <% end_loop %>
@@ -24,7 +24,7 @@
             </div>
         <% end_if %>
 
-        <div class="pure-u-1 pure-u-md-8-24">
+        <div class="pure-u-1 pure-u-md-6-24 pure-push-md-2-24">
             <% include SideBar %>
         </div>
 
