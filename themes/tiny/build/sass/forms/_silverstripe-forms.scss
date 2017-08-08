@@ -13,7 +13,7 @@ form {
 	}
 
 	label {
-		line-height: 3em;
+		line-height: 32px;
 	}
 
 	div.field {
@@ -24,6 +24,7 @@ form {
 .Actions .btn {
 	float: left;
 	margin-right: 20px;
+	margin-top: 16px
 }
 
 .fieldset { //Silverstripe uses fieldsets wrongly, so don't style with default
@@ -36,4 +37,13 @@ form {
 	font-size: 0.8em;
 	line-height: 35px;
 	padding-left: 20px;
+}
+
+.optionset {
+	list-style-type: none;
+	padding-left: 0;
+
+	label {
+		padding-left: 8px;
+	}
 }

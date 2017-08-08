@@ -20,7 +20,6 @@ input.text {
 
 	@include respond(md) {
 		font-family: $font-bold;
-		font-size: 25px;
 	}
 
 	.field & {
@@ -30,7 +29,7 @@ input.text {
 		height: 40px;
 
 		@include respond(md) {
-			height: 60px;
+			height: 40px;
 		}
 	}
 }

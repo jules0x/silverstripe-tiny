@@ -19,14 +19,19 @@
                     $Content
                 <% end_if %>
             </div>
-            <% if $Cart %>
-                <% with $Cart %>
-                    <% include Cart ShowSubtotals=true %>
-                <% end_with %>
-                $OrderForm
-            <% else %>
-                <p class="message warning"><%t ShoppingCart.NoItems "There are no items in your cart." %></p>
-            <% end_if %>
+            <div class="cart-wrap">
+                <% if $Cart %>
+                    <% with $Cart %>
+                        <% include Cart ShowSubtotals=true %>
+                    <% end_with %>
+
+                <div class="order-form">
+                    $OrderForm
+                </div>
+                <% else %>
+                    <p class="message warning"><%t ShoppingCart.NoItems "There are no items in your cart." %></p>
+                <% end_if %>
+            </div>
         </div>
 
     </div>

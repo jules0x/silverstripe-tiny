@@ -1,6 +1,15 @@
-<div class="cart--side pure-g">
-    <h3 class="cart-title pure-u-1"><%t ShoppingCart.Headline "Shopping cart" %></h3>
 
+
+<div class="cart--side pure-g" data-sidecart>
+    <button class="cart-toggle tiny-button"
+            type="button"
+            aria-label="Open the shopping cart"
+            data-sidecart-toggle>
+            <span class="hamburger-box">
+            </span>
+    </button>
+
+    <h3 class="cart-title pure-u-1"><%t ShoppingCart.Headline "Shopping cart" %></h3>
     <% if $Cart %>
         <% with $Cart %>
             <p class="cart-itemcount pure-u-md-16-24">
@@ -10,10 +19,6 @@
                     <%t ShoppingCart.ItemsInCartSingular 'There is <a href="{link}">1 item</a> in your cart.' link=$Top.CartLink %>
                 <% end_if %>
             </p>
-
-            <div class="cart-checkoutlink pure-u-md-8-24">
-                <a class="tiny-button" href="$Top.CheckoutLink"><%t ShoppingCart.Checkout "Checkout" %></a>
-            </div>
 
         <div class="pure-u-1">
             <% loop $Items %>
@@ -47,6 +52,10 @@
                     </div>
             <% end_loop %>
             </div>
+
+        <div class="cart-checkoutlink pure-u-1">
+            <a class="tiny-button" href="$Top.CheckoutLink"><%t ShoppingCart.Checkout "Checkout" %></a>
+        </div>
 
         <% end_with %>
     <% else %>

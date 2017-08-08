@@ -8,6 +8,10 @@
 
         <% include Header %>
 
+        <% if $Cart.Items %>
+            <% include SideCart %>
+        <% end_if %>
+
         $Layout
 
         <% include Footer %>

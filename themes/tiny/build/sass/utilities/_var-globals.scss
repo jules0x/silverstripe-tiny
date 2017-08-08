@@ -29,7 +29,7 @@ $color-bunker: #131A21;
 $color-carnation: #FC5F5E;
 $color-ebony-clay: #212E3A;
 $color-fountain-blue: #59C3BC;
-$color-gallery: #EFEFEF;
+$color-gallery: #FFF;
 $color-mercury: #e5e5e5;
 $color-pickled-bluewood: #354A5E;
 $color-red-ribbon: #E9004C;
@@ -66,7 +66,7 @@ Make sure that the colours assigned here are assigned using the
 colour variables above 
 */
 
-$brand-text-color: #FFF;
+$brand-text-color: #333;
 $default-color: $color-gallery;
 $primary-color: #0d8c78;
 $secondary-color: $color-pickled-bluewood;
@@ -96,15 +96,15 @@ colour variables above
 // Menu bar
 $menu-color: $primary-color;
 $menu-background-color: #23507b;
-$menu-link-color: #FFF;
-$menu-link-hover-color: #FFF;
+$menu-link-color: #333;
+$menu-link-hover-color: #333;
 $menu-link-hover-background-color: darken($primary-color, 15%);
 
 // Hamburger
-$hamburger-color: #FFF;
+$hamburger-color: #333;
 
 // Header
-$header-background: #1A2A45;
+$header-background: #FFF;
 
 // Footer
 $footer-color: transparent;

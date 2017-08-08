@@ -105,7 +105,9 @@ h1, h2, h3 {
 #action_checkoutSubmit,
 #action_setshippingaddress,
 #Form_ShippingMethodForm_action_setShippingMethod,
-#action_setcoupon {
+#action_setcoupon,
+#Form_MembershipForm_action_createaccount,
+#Form_MembershipForm_action_guestcontinue {
 	background: #fff;
 	display: inline-block;
 	border: 1px solid #ccc;

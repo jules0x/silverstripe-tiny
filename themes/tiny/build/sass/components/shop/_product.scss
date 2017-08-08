@@ -1,4 +1,5 @@
 .product {
+	margin-bottom: 32px;
 
 	&-details {
 		.Image {}
@@ -19,7 +20,9 @@
 		padding: 0;
 	}
 
-	&-title {}
+	&-title {
+		margin: 16px 0;
+	}
 
 	&-menu {}
 

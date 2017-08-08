@@ -1,8 +1,11 @@
 .price {
+	margin-bottom: 16px;
 
 	&-original {
+		margin-bottom: 4px;
 		text-decoration: line-through;
 	}
+
 	&-value {}
 	&-currency {}
 }
