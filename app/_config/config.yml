@@ -1,0 +1,14 @@
+---
+Name: app
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+SSViewer:
+  theme: 'default'
+---
+Name: mysettings
+---
+Injector:
+  UploadField: SelectUploadField
+---

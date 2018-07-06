@@ -1,0 +1,6 @@
+LeftAndMain:
+  extensions:
+    - CMSAdminExtension
+SiteConfig:
+  extensions:
+    - SiteConfigExtension
